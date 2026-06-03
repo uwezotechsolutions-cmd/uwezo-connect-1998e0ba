@@ -32,12 +32,12 @@ function AdminLayout() {
     );
   }
 
-  const nav = [
+  const nav: { to: string; label: string; icon: any; exact?: boolean }[] = [
     { to: "/admin", label: "Overview", icon: Briefcase, exact: true },
     { to: "/admin/careers", label: "Careers", icon: Briefcase },
     { to: "/admin/testimonials", label: "Testimonials", icon: Quote },
     ...(isSuperAdmin ? [{ to: "/admin/users", label: "Users & Roles", icon: Users }] : []),
-  ] as const;
+  ];
 
   return (
     <div className="min-h-screen bg-background">
