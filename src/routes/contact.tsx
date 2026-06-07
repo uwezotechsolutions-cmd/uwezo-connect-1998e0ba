@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
 });
 
-const SERVICES = ["Data Entry", "Graphic Design", "Marketing", "Customer Care", "Website Building", "Data Analysis", "Video Marketing"];
+const SERVICES = ["Data Entry", "Graphic Design", "Marketing", "Customer Care", "Website Building", "Data Analysis", "Video Marketing", "IT Support Care"];
 
 const schema = z.object({
   name: z.string().trim().min(1).max(100),
