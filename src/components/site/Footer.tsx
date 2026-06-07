@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Leaf } from "lucide-react";
+import logoAsset from "@/assets/uwezo-logo.asset.json";
 
 export function Footer() {
   return (
@@ -7,9 +7,7 @@ export function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-display text-xl font-semibold">
-            <span className="grid h-8 w-8 place-items-center rounded-md bg-accent text-accent-foreground">
-              <Leaf className="h-4 w-4" />
-            </span>
+            <img src={logoAsset.url} alt="Uwezo Tech Solutions logo" width={32} height={32} className="h-8 w-8 rounded-md object-contain" />
             Uwezo Tech
           </div>
           <p className="mt-3 text-sm text-background/70">

@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, ChartBar, Palette, Megaphone, MessageSquare, 
 import heroImg from "@/assets/hero.jpg";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Counter } from "@/components/site/Counter";
+import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -87,32 +88,38 @@ function Home() {
 
       {/* Services snapshot */}
       <section className="container-page py-20">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-4xl text-foreground">Seven remote teams, one powerful mission.</h2>
-          <p className="mt-3 text-muted-foreground">We offer a range of professional digital services tailored to your business.</p>
-        </div>
+        <Reveal>
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-display text-4xl text-foreground">Seven remote teams, one powerful mission.</h2>
+            <p className="mt-3 text-muted-foreground">We offer a range of professional digital services tailored to your business.</p>
+          </div>
+        </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <div key={s.title} className="group rounded-xl border border-border bg-card p-6 transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-lg">
-              <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary">
-                <s.icon className="h-5 w-5" />
+          {services.map((s, i) => (
+            <Reveal key={s.title} delay={i * 0.06}>
+              <div className="group rounded-xl border border-border bg-card p-6 transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-lg">
+                <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary">
+                  <s.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{s.text}</p>
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{s.text}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
-        <div className="mt-10 text-center">
-          <Link to="/services" className="inline-flex items-center gap-2 font-medium text-primary hover:underline">
-            Explore each service <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <Reveal delay={0.1}>
+          <div className="mt-10 text-center">
+            <Link to="/services" className="inline-flex items-center gap-2 font-medium text-primary hover:underline">
+              Explore each service <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
 
       {/* Difference */}
       <section className="bg-ink py-20 text-background">
         <div className="container-page grid items-center gap-12 md:grid-cols-2">
-          <div>
+          <Reveal>
             <p className="font-display text-3xl italic text-accent">
               “We don't just outsource tasks. We build careers.”
             </p>
@@ -120,21 +127,25 @@ function Home() {
               When you work with Uwezo Tech Solutions, you are not a typical client. You become a partner in solving one of
               the world's most overlooked crises: the lack of work for displaced people.
             </p>
-          </div>
+          </Reveal>
           <ul className="space-y-4">
             {[
               "Direct impact – 100% of your payment goes to refugee team members.",
               "Quality work – Trained professionals meeting global standards.",
               "Real change – Every project reduces the jobless rate inside Dzaleka.",
-            ].map((p) => (
-              <li key={p} className="flex gap-3 rounded-lg border border-background/15 bg-background/5 p-4">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-                <span className="text-background/90">{p}</span>
-              </li>
+            ].map((p, i) => (
+              <Reveal key={p} delay={i * 0.08}>
+                <li className="flex gap-3 rounded-lg border border-background/15 bg-background/5 p-4">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <span className="text-background/90">{p}</span>
+                </li>
+              </Reveal>
             ))}
-            <Link to="/contact" className="mt-4 inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-medium text-accent-foreground">
-              Start a Pilot Project <ArrowRight className="h-4 w-4" />
-            </Link>
+            <Reveal delay={0.3}>
+              <Link to="/contact" className="mt-4 inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-medium text-accent-foreground">
+                Start a Pilot Project <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Reveal>
           </ul>
         </div>
       </section>
