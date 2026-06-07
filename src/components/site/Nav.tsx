@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/uwezo-logo.asset.json";
 
 const links = [
   { to: "/", label: "Home" },
