@@ -46,7 +46,8 @@ function About() {
               camp. Many have university degrees, tech skills, and an urgent desire to contribute — but no opportunities.
             </p>
             <p>
-              Uwezo Tech Solutions was born to change that. <strong>“Uwezo”</strong> means <em>ability</em> or <em>power</em>{" "}
+              Uwezo Tech Solutions was founded by <strong>Sichem Shekinah Mulumba</strong> to respond to the extreme challenges
+              refugees face every single day. <strong>"Uwezo"</strong> means <em>ability</em> or <em>power</em>{" "}
               in Swahili. We gather talented refugees and provide them with stable, remote digital work. In return, your
               business gets high‑quality services at fair prices, and a refugee earns a sustainable income, regains
               dignity, and supports their family.
