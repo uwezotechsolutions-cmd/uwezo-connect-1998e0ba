@@ -20,9 +20,7 @@ export function Nav() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-display text-xl font-semibold text-primary">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground">
-            <Leaf className="h-4 w-4" />
-          </span>
+          <img src={logoAsset.url} alt="Uwezo Tech Solutions logo" width={32} height={32} className="h-8 w-8 rounded-md bg-ink object-contain" />
           Uwezo Tech
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
