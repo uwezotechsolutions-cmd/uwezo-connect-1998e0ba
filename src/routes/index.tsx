@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video, Brain, Tags } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Counter } from "@/components/site/Counter";
@@ -8,8 +8,8 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Uwezo Tech Solutions – Hire Remote Refugees | Data Entry, Design, Marketing, Customer Care, Web, Data Analysis, Video" },
-      { name: "description", content: "Hire skilled refugees from Dzaleka Camp for data entry, graphic design, customer care, web development, data analysis & video marketing. Reduce unemployment while getting quality work." },
+      { title: "Uwezo Tech Solutions – Hire Remote Refugees | Data Entry, Design, Marketing, Customer Care, Web, Data Analysis, Video, AI & Data Annotation" },
+      { name: "description", content: "Hire skilled refugees from Dzaleka Camp for data entry, graphic design, customer care, web development, data analysis, video marketing, AI machine learning & data annotation. Reduce unemployment while getting quality work." },
       { property: "og:title", content: "Uwezo Tech Solutions — Hire Remote. Transform Lives." },
       { property: "og:description", content: "Professional remote services from Dzaleka Refugee Camp." },
     ],
@@ -25,6 +25,8 @@ const services = [
   { icon: Globe, title: "Website Building", text: "Responsive sites, landing pages, e‑commerce." },
   { icon: BarChart3, title: "Data Analysis", text: "Spreadsheets, dashboards, insights." },
   { icon: Video, title: "Video Marketing", text: "Editing, subtitles, short promos." },
+  { icon: Brain, title: "AI Machine Learning", text: "Model training, automation & insights." },
+  { icon: Tags, title: "Data Annotations", text: "Image, text & audio labeling for AI." },
 ];
 
 function Home() {
@@ -41,7 +43,7 @@ function Home() {
               Hire Remotely. <span className="text-primary">Transform Lives.</span> Hire Refugees in Dzaleka.
             </h1>
             <p className="max-w-xl text-lg text-muted-foreground">
-              Uwezo Tech Solutions gives your business professional digital services — from data entry to video marketing —
+              Uwezo Tech Solutions gives your business professional digital services — from data entry to AI machine learning —
               while creating dignified jobs for refugees in Malawi. Every task you outsource directly lowers unemployment
               in Dzaleka Refugee Camp.
             </p>
@@ -90,7 +92,7 @@ function Home() {
       <section className="container-page py-20">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-4xl text-foreground">Seven remote teams, one powerful mission.</h2>
+            <h2 className="font-display text-4xl text-foreground">Nine remote teams, one powerful mission.</h2>
             <p className="mt-3 text-muted-foreground">We offer a range of professional digital services tailored to your business.</p>
           </div>
         </Reveal>
