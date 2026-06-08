@@ -78,7 +78,7 @@ export function ChatWidget() {
         <div className="fixed bottom-24 right-5 z-50 flex h-[32rem] w-[22rem] max-w-[calc(100vw-2.5rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl animate-in fade-in slide-in-from-bottom-4">
           {/* Header */}
           <div className="flex items-center gap-3 border-b border-border bg-background px-4 py-3">
-            <img src={logo.src} alt="Uwezo" className="h-8 w-8 rounded-md" />
+            <img src={logo.url} alt="Uwezo" className="h-8 w-8 rounded-md" />
             <div className="flex-1">
               <p className="text-sm font-semibold text-foreground">Uwezo Assistant</p>
               <p className="text-xs text-muted-foreground">We usually reply instantly</p>
