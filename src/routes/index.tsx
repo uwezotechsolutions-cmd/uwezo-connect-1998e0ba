@@ -8,8 +8,8 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Uwezo Tech Solutions – Hire Remote Refugees | Data Entry, Design, Marketing, Customer Care, Web, Data Analysis, Video" },
-      { name: "description", content: "Hire skilled refugees from Dzaleka Camp for data entry, graphic design, customer care, web development, data analysis & video marketing. Reduce unemployment while getting quality work." },
+      { title: "Uwezo Tech Solutions – Hire Remote Refugees | Data Entry, Design, Marketing, Customer Care, Web, Data Analysis, Video, AI & Data Annotation" },
+      { name: "description", content: "Hire skilled refugees from Dzaleka Camp for data entry, graphic design, customer care, web development, data analysis, video marketing, AI machine learning & data annotation. Reduce unemployment while getting quality work." },
       { property: "og:title", content: "Uwezo Tech Solutions — Hire Remote. Transform Lives." },
       { property: "og:description", content: "Professional remote services from Dzaleka Refugee Camp." },
     ],
