@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video, Brain, Tags } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Counter } from "@/components/site/Counter";

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Reveal } from "@/components/site/Reveal";
-import { ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video, LifeBuoy } from "lucide-react";
+import { ChartBar, Palette, Megaphone, MessageSquare, Globe, BarChart3, Video, LifeBuoy, Brain, Tags } from "lucide-react";
 
 
 export const Route = createFileRoute("/services")({
