@@ -116,6 +116,7 @@ function Contact() {
 
         <div className="mt-16">
           <h2 className="font-display text-2xl text-foreground">Book directly</h2>
+          <p className="mt-2 text-sm text-muted-foreground">Appointments available 24/7, every day of the week.</p>
           <div className="mt-4 overflow-hidden rounded-2xl border border-border bg-card">
             <iframe src={CALENDLY_URL} className="h-[680px] w-full" title="Calendly booking" />
           </div>
