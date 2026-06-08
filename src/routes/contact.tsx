@@ -101,7 +101,7 @@ function Contact() {
               <Calendar className="mt-0.5 h-5 w-5 text-primary" />
               <div>
                 <p className="font-medium text-foreground">Book a meeting</p>
-                <p className="text-sm text-muted-foreground">Schedule a 30-min call via Calendly</p>
+                <p className="text-sm text-muted-foreground">We work 24/7 — book any day, including Saturday and Sunday.</p>
               </div>
             </a>
             <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5">
@@ -116,6 +116,7 @@ function Contact() {
 
         <div className="mt-16">
           <h2 className="font-display text-2xl text-foreground">Book directly</h2>
+          <p className="mt-2 text-sm text-muted-foreground">Appointments available 24/7, every day of the week.</p>
           <div className="mt-4 overflow-hidden rounded-2xl border border-border bg-card">
             <iframe src={CALENDLY_URL} className="h-[680px] w-full" title="Calendly booking" />
           </div>
