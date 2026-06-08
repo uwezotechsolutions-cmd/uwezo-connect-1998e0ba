@@ -25,6 +25,8 @@ const services = [
   { icon: Globe, title: "Website Building", text: "Responsive sites, landing pages, e‑commerce." },
   { icon: BarChart3, title: "Data Analysis", text: "Spreadsheets, dashboards, insights." },
   { icon: Video, title: "Video Marketing", text: "Editing, subtitles, short promos." },
+  { icon: Brain, title: "AI Machine Learning", text: "Model training, automation & insights." },
+  { icon: Tags, title: "Data Annotations", text: "Image, text & audio labeling for AI." },
 ];
 
 function Home() {
@@ -41,7 +43,7 @@ function Home() {
               Hire Remotely. <span className="text-primary">Transform Lives.</span> Hire Refugees in Dzaleka.
             </h1>
             <p className="max-w-xl text-lg text-muted-foreground">
-              Uwezo Tech Solutions gives your business professional digital services — from data entry to video marketing —
+              Uwezo Tech Solutions gives your business professional digital services — from data entry to AI machine learning —
               while creating dignified jobs for refugees in Malawi. Every task you outsource directly lowers unemployment
               in Dzaleka Refugee Camp.
             </p>
@@ -90,7 +92,7 @@ function Home() {
       <section className="container-page py-20">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-4xl text-foreground">Seven remote teams, one powerful mission.</h2>
+            <h2 className="font-display text-4xl text-foreground">Nine remote teams, one powerful mission.</h2>
             <p className="mt-3 text-muted-foreground">We offer a range of professional digital services tailored to your business.</p>
           </div>
         </Reveal>

@@ -39,6 +39,12 @@ const data = [
   { icon: LifeBuoy, title: "IT Support Care", lede: "Friendly, reliable tech support for your team and customers.",
     items: ["Helpdesk & ticket triage (email, chat, phone)", "Software installation, updates & basic troubleshooting", "Account, password & access management", "Remote desktop assistance and onboarding for new users"],
     note: "Multilingual support across English, French, Portuguese, Swahili, Lingala, Kirundi, Kinyarwanda, Tshiluba, and Chichewa." },
+  { icon: Brain, title: "AI Machine Learning", lede: "Intelligent solutions trained on real-world data.",
+    items: ["Basic model training & fine-tuning pipelines", "Data preprocessing & feature engineering", "Predictive analytics & classification tasks", "AI-powered automation scripts & workflow bots"],
+    note: "We combine open-source tools with careful human oversight to deliver reliable AI outputs." },
+  { icon: Tags, title: "Data Annotations", lede: "High-quality labeled data for your AI and research needs.",
+    items: ["Image classification, bounding boxes & segmentation labels", "Text classification, sentiment & named-entity tagging", "Audio transcription & speaker identification", "Quality assurance & consensus review"],
+    note: "Trained annotators with attention to detail — essential for accurate machine learning." },
 ];
 
 function Services() {
@@ -47,7 +53,7 @@ function Services() {
       <section className="container-page py-20">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">Services</span>
-          <h1 className="mt-2 max-w-3xl font-display text-5xl text-foreground">Eight teams, one mission.</h1>
+          <h1 className="mt-2 max-w-3xl font-display text-5xl text-foreground">Ten teams, one mission.</h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">Each service is delivered by trained refugee professionals from Dzaleka, working remotely to global standards.</p>
         </Reveal>
 
