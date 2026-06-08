@@ -101,7 +101,7 @@ function Contact() {
               <Calendar className="mt-0.5 h-5 w-5 text-primary" />
               <div>
                 <p className="font-medium text-foreground">Book a meeting</p>
-                <p className="text-sm text-muted-foreground">Schedule a 30-min call via Calendly</p>
+                <p className="text-sm text-muted-foreground">We work 24/7 — book any day, including Saturday and Sunday.</p>
               </div>
             </a>
             <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5">
