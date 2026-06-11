@@ -9,14 +9,16 @@ import { Mail, Calendar, MessageCircle } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Uwezo Tech Solutions – Get a Quote for Remote Services" },
-      { name: "description", content: "Request a quote, book a meeting via Calendly, or reach our team by email." },
+      { title: "Contact Uwezo Connect — Hire Talent or Post a Project" },
+      { name: "description", content: "Tell us who you need or what you want built. We'll match you with verified global professionals within 24 hours." },
+      { property: "og:title", content: "Contact Uwezo Connect" },
+      { property: "og:description", content: "Hire verified global talent. Reply within 24 hours." },
     ],
   }),
   component: Contact,
 });
 
-const SERVICES = ["Data Entry", "Graphic Design", "Marketing", "Customer Care", "Website Building", "Data Analysis", "Video Marketing", "IT Support Care", "AI Machine Learning", "Data Annotations"];
+const SERVICES = ["Data Entry", "Virtual Assistance", "Customer Support", "Graphic Design", "Digital Marketing", "Video Editing", "Website Development", "Mobile App Development", "Data Analysis", "Content Creation", "Social Media Management", "Data Annotations"];
 
 const schema = z.object({
   name: z.string().trim().min(1).max(100),
