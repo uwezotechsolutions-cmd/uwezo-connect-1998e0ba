@@ -29,9 +29,9 @@ function CareersAdmin() {
       .update({ status: "reviewed", read_at: new Date().toISOString() }).eq("id", r.id);
     if (error) return toast.error("Failed to update");
     // Open a prefilled mailto for meeting invitation (works without an email API)
-    const subject = encodeURIComponent("Uwezo Tech — Interview invitation");
+    const subject = encodeURIComponent("Uwezo Connect — Interview invitation");
     const body = encodeURIComponent(
-      `Hi ${r.full_name},\n\nThank you for applying to Uwezo Tech Solutions. We'd love to meet you. Please book a time via:\nhttps://calendly.com/uwezotechsolutions/30min\n\nWarm regards,\nUwezo Tech Solutions`
+      `Hi ${r.full_name},\n\nThank you for applying to Uwezo Connect. We'd love to meet you. Please book a time via:\nhttps://calendly.com/uwezotechsolutions/30min\n\nWarm regards,\nUwezo Connect`
     );
     window.open(`mailto:${r.email}?subject=${subject}&body=${body}`, "_blank");
     await supabase.from("career_applications")
