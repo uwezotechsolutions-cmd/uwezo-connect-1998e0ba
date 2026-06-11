@@ -9,7 +9,7 @@ import hopeImg from "@/assets/impact-hope.jpg";
 export const Route = createFileRoute("/impact")({
   head: () => ({
     meta: [
-      { title: "Impact — Uwezo Tech Solutions" },
+      { title: "Impact — Uwezo Connect" },
       { name: "description", content: "Your work creates real income for refugees in Dzaleka. See our impact numbers, community visits, and future goals." },
     ],
   }),

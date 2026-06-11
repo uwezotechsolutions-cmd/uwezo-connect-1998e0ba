@@ -19,9 +19,9 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-display text-xl font-semibold text-primary">
-          <img src={logoAsset.url} alt="Uwezo Tech Solutions logo" width={32} height={32} className="h-8 w-8 rounded-md bg-ink object-contain" />
-          Uwezo Tech
+        <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold tracking-tight text-primary">
+          <img src={logoAsset.url} alt="Uwezo Connect logo" width={32} height={32} className="h-8 w-8 rounded-md bg-ink object-contain" />
+          Uwezo Connect
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
@@ -39,7 +39,7 @@ export function Nav() {
             to="/contact"
             className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:bg-deep"
           >
-            Request a Quote
+            Get Started
           </Link>
         </nav>
         <button
