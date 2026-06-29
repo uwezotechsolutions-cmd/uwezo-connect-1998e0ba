@@ -13,3 +13,14 @@ export default defineConfig({
     server: { entry: "server" },
   },
 });
+
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import nitro from "nitro/vite"; // Make sure this is imported
+
+export default defineConfig({
+  // ... your other config
+  plugins: [
+    // ... other plugins,
+    nitro() // Ensure nitro is in the plugins array
+  ]
+});
