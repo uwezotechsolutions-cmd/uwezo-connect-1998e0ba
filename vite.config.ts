@@ -8,13 +8,14 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import nitro from "nitro/vite"; // Make sure this is imported
 
 export default defineConfig({
-  tanstackStart: {
+  
+   // ... your other config
+  plugins: [
+    tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-   // ... your other config
-  plugins: [
     // ... other plugins,
     nitro() // Ensure nitro is in the plugins array
   ] 
